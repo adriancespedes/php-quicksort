@@ -16,7 +16,7 @@ class QuickSort
 
         for ($i = 1; $i < count($numbers); $i++) {
             if (!is_numeric($numbers[$i])) {
-                throwException('All array elements must be numbers');
+                throw new \Exception('All array elements must be numbers');
             }
 
             //check if each element of array is bigger or smaller than first one and place it in the arrays
